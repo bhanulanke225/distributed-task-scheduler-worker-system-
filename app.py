@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from uuid import uuid4
 
-from queue import add_task, get_queue_size
+from task_queue import add_task, get_queue_size
 
 
 app = FastAPI(
